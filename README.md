@@ -6,7 +6,7 @@ _En este tutorial crearemos un juego de pong sencillo utilizando el lenguaje de 
 
 _Objetivos de esta lección:_
 
-_Cree una aplicación de formulario de Windows en Visual Studio con C#_
+_Cree una aplicación de formulario de Windows en Visual Studio con C#._
 Crear dos formularios en el proyecto.
 Agregue cuadros de imágenes, etiquetas, botones y cuadros de texto a los formularios.
 Agregar eventos y funciones al formulario
