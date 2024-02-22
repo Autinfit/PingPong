@@ -10,6 +10,6 @@ _Objetivos de esta lección:_
 - Asignar movimientos clave hacia arriba y hacia abajo al jugador.
 - Asignar movimientos aleatorios a los valores x e y de la pelota.
 - Asignar movimientos y velocidad aleatoria para el movimiento de la computadora.
-- Mantener un registro de la puntuación y actualice la puntuación para el jugador y la computadora
+- Mantener un registro de la puntuación y actualizar de cierta manera la puntuación para el jugador y la computadora
 - Importe imágenes y asígnelas al balón, al jugador y al cuadro de imágenes de la computadora.
 - Mostrar un mensaje final personalizado cuando el jugador o la computadora gana el juego
