@@ -6,10 +6,10 @@ _En este tutorial crearemos un juego de pong sencillo utilizando el lenguaje de 
 
 _Objetivos de esta lección:_
 
-_Crear una aplicación de formulario de Windows en Visual Studio con C#._
-_Crear dos formularios en el proyecto._
-Agregue cuadros de imágenes, etiquetas, botones y cuadros de texto a los formularios.
-Agregar eventos y funciones al formulario
-Permita que el programa cargue imágenes URL en el cuadro de imagen
-Compruebe si la URL es válida para que se cargue la imagen.
-Si el archivo cargado es un archivo local, cargue la imagen de manera diferente.
+Crea un juego de pong usando Windows Forms y C#
+Asignar movimientos clave hacia arriba y hacia abajo al jugador
+Asigne movimientos aleatorios a los valores x e y de la pelota.
+Asignar movimientos y velocidad aleatoria para el movimiento de la computadora.
+Mantenga un registro de la puntuación y actualice la puntuación para el jugador y la computadora
+Importe imágenes y asígnelas al balón, al jugador y al cuadro de imágenes de la computadora.
+Mostrar mensaje final personalizado cuando el jugador o la computadora gana el juego
