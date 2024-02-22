@@ -7,7 +7,7 @@ _En este tutorial crearemos un juego de pong sencillo utilizando el lenguaje de 
 _Objetivos de esta lección:_
 
 - Crear un juego de Ping-pong usando Windows Forms y C#.
-Asignar movimientos clave hacia arriba y hacia abajo al jugador
+- Asignar movimientos clave hacia arriba y hacia abajo al jugador
 Asigne movimientos aleatorios a los valores x e y de la pelota.
 Asignar movimientos y velocidad aleatoria para el movimiento de la computadora.
 Mantenga un registro de la puntuación y actualice la puntuación para el jugador y la computadora
