@@ -11,5 +11,5 @@ _Objetivos de esta lección:_
 - **_Asignar movimientos aleatorios a los valores "x" e "y" de la pelota._**
 - **_Asignar movimientos y velocidad aleatoria para el movimiento de la computadora._**
 - **_Mantener un registro de la puntuación y actualizar de cierta manera la puntuación para el jugador y la computadora._**
-- _Importar aquellas imágenes y asignarlas a la pelota, al jugador y al cuadro de imágenes de la computadora._
+- **_Importar aquellas imágenes y asignarlas a la pelota, al jugador y al cuadro de imágenes de la computadora._**
 - _Mostrar un mensaje final personalizado cuando el jugador o la computadora gana el juego._
