@@ -2,6 +2,19 @@ namespace TenisDeMesaVirtual
 {
     public partial class Form1 : Form
     {
+        // DESDE AQUÍ CREAREMOS LAS VARIABLES...
+
+        int velocidadBolaEnX = 0; // VELOCIDAD DE LA BOLA EN X.
+        int velocidadBolaEnY = 0; // VELOCIDAD DE LA BOLA EN Y.
+        int velocidadInicial = 2; // SU VELOCIDAD INICIAL POR DEFECTO LO DEJAREMOS EN 2.
+        Random aleatorio = new Random(); // VARIABLE ALEATORIA.
+        bool irAbajo, irArriba; // DEPENDERÁ SI VA ABAJO O ARRIBA LOS JUGADORES Y LA BOLA SEGÚN SEA EL CASO.
+        int cambio_velocidad_rival = 50; // LA VELOCIDAD DEL RIVAL PUEDE VARIAR SEGÚN EL GRADO DE DIFICULTAD DEL JUGADOR AL INCREMENTAR LOS PUNTOS DEL PARTIDO DE PING-PONG.
+        int puntuacionJugador = 0; // SU PUNTUACIÓN INICIALIZA EN 0.
+        int puntuacionRival = 0; // LA PUNTUACIÓN DEL RIVAL TAMBIÉN SE INICIALIZA EN 0.
+        int velocidadJugador = 8; // SU VELOCIDAD INICIAL SERÁ EN 8.
+        int[] i = { 5, 6, 8, 9 }; // MATRIZ CUANTITATIVA EN FILAS.
+        int[] j = { 10, 9, 8, 11, 12 }; // MATRIZ CUANTITATIVA EN COLUMNAS.
         public Form1()
         {
             InitializeComponent();
