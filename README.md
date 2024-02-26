@@ -4,7 +4,7 @@
 
 - **_En este tutorial crearemos un juego de pong sencillo utilizando el lenguaje de programación C#._**
 - **_Construiremos este proyecto utilizando la aplicación de Windows Forms en Visual Studio._**
-- **_Este juego es muy simple, estamos usando 3 cuadros de imágenes en el proyecto, 1 para el jugador, otro para la computadora y 1 para la pelota._**
+- **_Este juego es muy simple, estamos usando 3 cuadros de imágenes en el proyecto, 1 para el jugador, otro para la computadora y por último, para la pelota._**
 - **_Puedes descargar las imágenes utilizadas dentro de este tutorial debajo de la sección de video tutorial._**
 - **_La sección de código fuente le proporcionará el código fuente completo utilizado en este proyecto._**
 - **_Le recomendamos que intente recrear el proyecto por usted mismo y, si tiene problemas, puede verificarlo con el mismo código fuente._**
