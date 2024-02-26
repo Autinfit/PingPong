@@ -24,6 +24,8 @@ namespace TenisDeMesaVirtual
         {
             // EVENTO EN DONDE FRECUENTEMENTE EL JUEGO CONSTA DE UN TEMPORIZADOR POR DEFECTO.
 
+            // ESO SÍ, LO DEJAREMOS AL FINAL DEL PROYECTO, YA QUE ES SÚPER TEDIOSO EL ALGORITMO DE ESTE MÉTODO PARA IDENTIFICAR LAS VARIABLES SECUENCIALMENTE...
+
             // EN INSTANTES...
         }
 
@@ -31,7 +33,17 @@ namespace TenisDeMesaVirtual
         {
             // EVENTO EN DONDE EL JUGADOR PRESIONA CUALQUIER TECLA DEL JUEGO.
 
-            // EN INSTANTES...
+            // ÉSTE ES UN MÉTODO SÚPER CORTITO, EN DONDE EL JUGADOR MUEVE LA RAQUETA DE PING-PONG MEDIANTE TECLAS DE MOVIMIENTO DE ARRIBA Y ABAJO.
+
+            if (e.KeyCode == Keys.Down) // SI SE PRESIONA LA TECLA DE ABAJO, ENTONCES...
+            {
+                irAbajo = true; // LA RAQUETA DEL JUGADOR SE MUEVE HACIA ABAJO.
+            }
+
+            if (e.KeyCode == Keys.Up) // SI SE PRESIONA LA TECLA DE ARRIBA, ENTONCES...
+            {
+                irArriba = true; // LA RAQUETA DEL JUGADOR SE MUEVE HACIA ARRIBA.
+            }
         }
 
         private void EventoSoltarTeclas(object sender, KeyEventArgs e)
