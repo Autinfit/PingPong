@@ -68,7 +68,37 @@ namespace TenisDeMesaVirtual
 
         private void ChequearColisiones(PictureBox imagen1, PictureBox imagen2, int offSet) // RECIBEN POR PARÁMETROS LAS PRIMERAS 2 IMÁGENES Y UNO FUERA DEL ÁREA DEL JUEGO.
         {
-            // EN INSTANTES...
+            // AHÍ CHEQUEAREMOS COLISIONES CON VARIAS IMÁGENES DE LA INTERFAZ (FORMULARIO)...
+
+            if (imagen1.Bounds.IntersectsWith(imagen2.Bounds)) // SI SE COLISIONAN CON AMBAS IMÁGENES DECLARADAS ANTERIORMENTE EN LA INTERFAZ (FORMULARIO)...
+            {
+                imagen1.Left = offSet; // LA IMAGEN 1 SE COMPENSA DENTRO DE LA INTERFAZ CON OTRA IMAGEN.
+
+                // DENTRO DE ESTA CONDICIÓN SI ES QUE SE CUMPLE, CREAREMOS POSICIONES PARA LA VELOCIDAD DE LA PELOTA DE PING-PONG EN "x" E "y"...
+
+                int x = j[aleatorio.Next(j.Length)]; // POSICIÓN DE LA PELOTA EN X.
+                int y = j[aleatorio.Next(j.Length)]; // POSICIÓN DE LA PELOTA EN Y.
+
+                if (velocidadBolaEnX < 0) // SI LA VELOCIDAD DE LA PELOTA EN LA POSICIÓN X ES MENOR QUE 0 O ES NEGATIVA, ENTONCES...
+                {
+                    velocidadBolaEnX = x; // LA VELOCIDAD DE LA PELOTA ESTARÁ DENTRO DE LA POSICIÓN ESTABLECIDA ANTERIORMENTE HACIA EL LADO DERECHO.
+                }
+                else // EN CASO CONTRARIO...
+                {
+                    velocidadBolaEnX = -x; // LA VELOCIDAD DE LA PELOTA INVIERTE HACIA EL LADO CONTRARIO.
+                }
+
+                // AHORA LO HAREMOS MEDIANTE LA POSICIÓN DE LA BOLA EN Y.
+
+                if (velocidadBolaEnY < 0) // SI LA VELOCIDAD DE LA PELOTA EN LA POSICIÓN Y ES MENOR QUE 0 O ES NEGATIVA, ENTONCES...
+                {
+                    velocidadBolaEnY = -y; // LA VELOCIDAD DE LA PELOTA ESTARÁ DENTRO DE LA POSICIÓN ESTABLECIDA ANTERIORMENTE HACIA ARRIBA.
+                }
+                else // EN CASO CONTRARIO...
+                {
+                    velocidadBolaEnY = y; // LA VELOCIDAD DE LA PELOTA INVIERTE HACIA ABAJO.
+                }
+            }
         }
 
         private void FinDelJuego(string mensaje) // RECIBE POR PARÁMETRO UN MENSAJE FINAL AL FINALIZAR LA PARTIDA.
