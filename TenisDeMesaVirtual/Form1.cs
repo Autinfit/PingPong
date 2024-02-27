@@ -15,6 +15,7 @@ namespace TenisDeMesaVirtual
         int velocidadJugador = 8; // SU VELOCIDAD INICIAL SERÁ EN 8.
         int[] i = { 5, 6, 8, 9 }; // MATRIZ CUANTITATIVA EN FILAS.
         int[] j = { 10, 9, 8, 11, 12 }; // MATRIZ CUANTITATIVA EN COLUMNAS.
+
         public Form1()
         {
             InitializeComponent();
@@ -50,7 +51,17 @@ namespace TenisDeMesaVirtual
         {
             // EVENTO EN DONDE EL JUGADOR SUELTA CUALQUIER TECLA DEL JUEGO.
 
-            // EN INSTANTES...
+            // AL EJECUTAR ESTE MÉTODO, ESTO ES LO CONTRARIO AL PRESIONAR UNA TECLA, SINO QUE SOLAMENTE CAMBIA LA ANALOGÍA BOOLEANA DECLARADO AHÍ ARRIBA.
+
+            if (e.KeyCode == Keys.Down) // SI SE SUELTA LA TECLA DE ABAJO, ENTONCES...
+            {
+                irAbajo = false; // LA RAQUETA DEL JUGADOR NO SE MUEVE HACIA ABAJO.
+            }
+
+            if (e.KeyCode == Keys.Up) // SI SE SUELTA LA TECLA DE ARRIBA, ENTONCES...
+            {
+                irArriba = false; // LA RAQUETA DEL JUGADOR NO SE MUEVE HACIA ARRIBA.
+            }
         }
 
         // CREAREMOS EVENTOS ADICIONALES PARA QQUE EL JUEGO CHEQUEE LAS COLISIONES Y PARA CUANDO FINALIZA LA PARTIDA.
