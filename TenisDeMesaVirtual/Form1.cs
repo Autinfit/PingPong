@@ -27,6 +27,40 @@ namespace TenisDeMesaVirtual
 
             // ESO SÍ, LO DEJAREMOS AL FINAL DEL PROYECTO, YA QUE ES SÚPER TEDIOSO EL ALGORITMO DE ESTE MÉTODO PARA IDENTIFICAR LAS VARIABLES SECUENCIALMENTE...
 
+            // DEFINIREMOS LAS VELOCIDADES EN "x" E "y" DE LA BOLA.
+
+            bola.Top -= velocidadBolaEnY; // DISMINUYE SU VELOCIDAD EN "y" DE LA BOLA.
+            bola.Left -= velocidadBolaEnX; // DISMINUYE SU VELOCIDAD EN "x" DE LA BOLA.
+
+            // AÑADIREMOS TEXTO ADICIONAL HACIA LA INTERFAZ DEL JUEGO.
+
+            this.Text = "Puntos Jugador: " + puntuacionJugador + " -- Puntos Rival: " + puntuacionRival;
+
+            // CONDICIONALES RESPECTO AL ANCHO Y LA ALTURA DE LA INTERFAZ AL FLOTAR LA BOLA.
+
+            if (bola.Top < 0 || bola.Bottom > this.ClientSize.Height) // SOBRE LA ALTURA DE LA BOLA...
+            {
+                velocidadBolaEnY = -velocidadBolaEnY; // RESPECTO A LA VELOCIDAD DE LA BOLA EN "y".
+            }
+
+            // SI SU RIVAL APUNTA HACIA AL JUGADOR Y ÉSTE FALLÓ EN EL JUEGO...
+
+            if (bola.Left < -2)
+            {
+                bola.Left = 300; // DISTANCIA MÁXIMA EN "x" HACIA AL JUGADOR EN FALLAR EL JUEGO.
+                velocidadBolaEnX = -velocidadBolaEnX;
+                puntuacionRival++; // OBTIENE 1 PUNTO PARA EL RIVAL.
+            }
+
+            // EN CAMBIO, SI EL JUGADOR ACIERTA HACIA SU RIVAL...
+
+            if (bola.Right > this.ClientSize.Width + 2)
+            {
+                bola.Left = 300; // DISTANCIA MÁXIMA EN "x" HACIA SU RIVAL EN FALLAR EL JUEGO.
+                velocidadBolaEnX = -velocidadBolaEnX;
+                puntuacionJugador++; // OBTIENE 1 PUNTO PARA EL JUGADOR.
+            }
+
             // EN INSTANTES...
         }
 
