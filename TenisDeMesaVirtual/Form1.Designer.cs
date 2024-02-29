@@ -31,11 +31,11 @@
             components = new System.ComponentModel.Container();
             jugador = new PictureBox();
             rival = new PictureBox();
-            pictureBox2 = new PictureBox();
+            bola = new PictureBox();
             temporizador = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)jugador).BeginInit();
             ((System.ComponentModel.ISupportInitialize)rival).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)bola).BeginInit();
             SuspendLayout();
             // 
             // jugador
@@ -58,15 +58,15 @@
             rival.TabIndex = 1;
             rival.TabStop = false;
             // 
-            // pictureBox2
+            // bola
             // 
-            pictureBox2.Image = Properties.Resources.ball;
-            pictureBox2.Location = new Point(468, 300);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(30, 30);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 2;
-            pictureBox2.TabStop = false;
+            bola.Image = Properties.Resources.ball;
+            bola.Location = new Point(468, 300);
+            bola.Name = "bola";
+            bola.Size = new Size(30, 30);
+            bola.SizeMode = PictureBoxSizeMode.StretchImage;
+            bola.TabIndex = 2;
+            bola.TabStop = false;
             // 
             // temporizador
             // 
@@ -80,7 +80,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(978, 644);
-            Controls.Add(pictureBox2);
+            Controls.Add(bola);
             Controls.Add(rival);
             Controls.Add(jugador);
             DoubleBuffered = true;
@@ -90,7 +90,7 @@
             KeyUp += EventoSoltarTeclas;
             ((System.ComponentModel.ISupportInitialize)jugador).EndInit();
             ((System.ComponentModel.ISupportInitialize)rival).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)bola).EndInit();
             ResumeLayout(false);
         }
 
@@ -98,7 +98,7 @@
 
         private PictureBox jugador;
         private PictureBox rival;
-        private PictureBox pictureBox2;
+        private PictureBox bola;
         private System.Windows.Forms.Timer temporizador;
     }
 }
