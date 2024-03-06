@@ -61,7 +61,35 @@ namespace TenisDeMesaVirtual
                 puntuacionJugador++; // OBTIENE 1 PUNTO PARA EL JUGADOR.
             }
 
-            // EN INSTANTES...
+            // REALIZAREMOS CONFIGURACIONES POSTERIORES PARA EL ORDENADOR MEDIANTE ALTURA DE LA INTERFAZ UTILIZANDO ALGUNAS CONDOICIONALES EXISTENTES...
+
+            if (rival.Top <= 1) // SI LA POSICIÓN DEL RIVAL EN "y" ES MENOR O IGUAL QUE 1..
+            {
+                rival.Top = 0; // ENTONCES SU RIVAL QUEDARÁ AHÍ EN SU POSICIÓN ORIGINAL.
+            }
+
+            else if (rival.Bottom >= this.ClientSize.Height) // EN CASO CONTRARIO SI ES QUE NO SE CUMPLE CON ESTA CONDICIÓN, EL CLIENTE SOLICITA LA ALTURA DEL RIVAL DE MANERA DINÁMICA.
+            {
+                rival.Top = this.ClientSize.Height - rival.Height; // MEDIANTE RESTA ALGORÍTMICA SE CALCULA LA ALTURA DISTANCIADA DEL RIVAL.
+            }
+
+            // ALGORÍTMICAMENTE AGREGAREMOS MÁS CONDICIONALES PARA LA PELOTA...
+
+            // SI LA ALTURA DE LA PELOTA ES MENOR QUE LA DEL RIVAL ENTONCES LA VELOCIDAD QUE EJERCERÁ EL RIVAL PUEDE SER MUY FÁCIL Y SIMPLE PARA EL JUGADOR.
+
+            if (bola.Top < rival.Top + (rival.Height / 2) && bola.Left > 300)
+            {
+                rival.Top -= velocidadInicial;
+            }
+
+            // SIN EMBARGO, SI LA ALTURA DE LA BOLA ES MAYOR QUE LA DEL RIVAL ENTONCES SU VELOCIDAD AUMENTA...
+
+            if (bola.Top > rival.Top + (rival.Height / 2) && bola.Left > 300)
+            {
+                rival.Top += velocidadInicial;
+            }
+
+            // E<N INSTANTES...
         }
 
         private void EventoPresionarTeclas(object sender, KeyEventArgs e)
