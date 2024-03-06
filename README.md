@@ -2,7 +2,7 @@
 
 **_Traducido del español:_**
 
-How to Create a Simple Ping-Pong Game in Windows Forms and Visual Studio
+### How to Create a Simple Ping-Pong Game in Windows Forms and Visual Studio
 
 ### Cómo crear un juego de Ping-Pong sencillo en Windows Forms y Visual Studio
 
