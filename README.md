@@ -1,6 +1,6 @@
 # PingPong
 
-_Traducido del español:_
+**_Traducido del español:_**
 
 ### Cómo crear un juego de Ping-Pong sencillo en Windows Forms y Visual Studio
 
