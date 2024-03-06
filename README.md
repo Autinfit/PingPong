@@ -4,6 +4,8 @@
 
 ### How to Create a Simple Ping-Pong Game in Windows Forms and Visual Studio:
 
+- In this tutorial we are going to create a simple Ping-pong game using the C# programming language.
+
 ### Cómo crear un juego de Ping-Pong sencillo en Windows Forms y Visual Studio:
 
 - **_En este tutorial vamos a crear un juego de Ping-pong sencillo utilizando el lenguaje de programación C#._**
