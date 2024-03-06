@@ -1,5 +1,7 @@
 # PingPong
 
+Traducido del español:
+
 ### Cómo crear un juego de Ping-Pong sencillo en Windows Forms y Visual Studio
 
 - **_En este tutorial vamos a crear un juego de Ping-pong sencillo utilizando el lenguaje de programación C#._**
