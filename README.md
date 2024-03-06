@@ -7,7 +7,7 @@
 - **_In this tutorial we are going to create a simple Ping-pong game using the C# programming language._**
 - **_We will build this wonderful project using the Windows Forms application in Visual Studio._**
 - **_This game is super easy to make, we are using 3 image frames in the project, one for the player, other for the computer and finally, at the ball._**
-- You can download the images used within this tutorial below the video tutorial section. (https://www.mooict.com/c-tutorials-create-a-simple-pong-game-in-windows-forms-and-visual-studio/).
+- _You can download the images used within this tutorial below the video tutorial section. (https://www.mooict.com/c-tutorials-create-a-simple-pong-game-in-windows-forms-and-visual-studio/)._
 
 ### Cómo crear un juego de Ping-Pong sencillo en Windows Forms y Visual Studio:
 
