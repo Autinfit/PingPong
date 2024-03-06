@@ -9,6 +9,7 @@
 - **_This game is super easy to make, we are using 3 image frames in the project, one for the player, other for the computer and finally, at the ball._**
 - **_You can download the images used within this tutorial below the video tutorial section. (https://www.mooict.com/c-tutorials-create-a-simple-pong-game-in-windows-forms-and-visual-studio/)._**
 - **_The source code section will provide you with the complete source code used in this project._**
+- We suggest that you try to recreate the project yourself and if you have problems, you can check it with the same source code.
 
 ### Cómo crear un juego de Ping-Pong sencillo en Windows Forms y Visual Studio:
 
