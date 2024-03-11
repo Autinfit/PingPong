@@ -22,6 +22,8 @@
 - **_La sección de código fuente le proporcionará el código fuente completo utilizado en este proyecto._**
 - **_Le recomendamos que intente recrear el proyecto por usted mismo y, si tiene problemas, puede verificarlo con el mismo código fuente._**
 
+![image](https://github.com/Autinfit/PingPong/assets/155406623/91726ca5-ae26-42b6-925a-93729e24399f)
+
 **_Objetivos de esta lección:_**
 
 - **_Crear un juego de Ping-pong usando Windows Forms y C#._**
