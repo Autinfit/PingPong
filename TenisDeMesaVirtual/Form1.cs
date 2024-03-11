@@ -4,8 +4,8 @@ namespace TenisDeMesaVirtual
     {
         // DESDE AQUÍ CREAREMOS LAS VARIABLES...
 
-        int velocidadBolaEnX = 0; // VELOCIDAD DE LA BOLA EN X.
-        int velocidadBolaEnY = 0; // VELOCIDAD DE LA BOLA EN Y.
+        int velocidadBolaEnX = 4; // VELOCIDAD DE LA BOLA EN X.
+        int velocidadBolaEnY = 4; // VELOCIDAD DE LA BOLA EN Y.
         int velocidadInicial = 2; // SU VELOCIDAD INICIAL POR DEFECTO LO DEJAREMOS EN 2.
         Random aleatorio = new Random(); // VARIABLE ALEATORIA.
         bool irAbajo, irArriba; // DEPENDERÁ SI VA ABAJO O ARRIBA LOS JUGADORES Y LA BOLA SEGÚN SEA EL CASO.
@@ -89,7 +89,50 @@ namespace TenisDeMesaVirtual
                 rival.Top += velocidadInicial;
             }
 
-            // E<N INSTANTES...
+            // LA SIGUIENTE VARIABLE SE DECLARA AL INICIO DE LAS ITERACIONES CONSECUTIVAS...
+
+            cambio_velocidad_rival -= 1; // REDUCE SU VELOCIDAD INICIAL EN 1.
+
+            // AL CAMBIAR LA VELOCIDAD DEL RIVAL...
+
+            if (cambio_velocidad_rival < 0)
+            {
+                velocidadInicial = i[aleatorio.Next(i.Length)]; // VELOCIDAD SE MODIFICA DE MANERA ALEATORIA DENTRO DE ESTA CONDICIÓN.
+                cambio_velocidad_rival = 50; // SERÁ MUCHO MÁS RÁPIDO QUE LO INICIAL.
+            }
+
+            // CUANDO EL JUGADOR VA HACIA ABAJO...
+
+            if (irAbajo && jugador.Top + jugador.Height < this.ClientSize.Height)
+            {
+                jugador.Top += velocidadJugador; // SU VELOCIDAD AUMENTA.
+            }
+
+            // SIN EMBARGO, CUANDO EL JUGADOR VA HACIA ARRIBA...
+
+            if (irArriba && jugador.Top > 0)
+            {
+                jugador.Top -= velocidadJugador; // SU VELOCIDAD DISMINUYE.
+            }
+
+            // LUEGO, LLAMAREMOS ALL MÉTODO DE CHEQUEAR COLISIONES, CON EL PROPÓSITO DE QUE CADA JUGADOR CHOQUE CON LA PELOTA AL LANZAR CON LAS RAQUETAS.
+
+            ChequearColisiones(bola, jugador, jugador.Right + 5); // PARA EL JUGADOR.
+            ChequearColisiones(bola, rival, rival.Left - 35); // PARA EL RIVAL.
+
+            // SI GANA EL RIVAL ANTE EL JUGADOR...
+
+            if (puntuacionRival > 5)
+            {
+                FinDelJuego("VUELVE A INTENTARLO! :(");
+            }
+
+            // EN CASO CONTRARIO SI ES QUE EL JUGADOR GANA...
+
+            if (puntuacionJugador > 5)
+            {
+                FinDelJuego("HAS GANADO LA PARTIDA! :)");
+            }
         }
 
         private void EventoPresionarTeclas(object sender, KeyEventArgs e)
