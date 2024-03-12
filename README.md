@@ -11,7 +11,7 @@
 
 ![image](https://github.com/Autinfit/PingPong/assets/155406623/e011c1eb-b3e5-4a44-8a40-e7e57266fb62)
 
-Lesson objectives:
+_Lesson objectives:_
 
 **_Traducido del español:_**
 
