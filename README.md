@@ -13,6 +13,8 @@
 
 **_Lesson objectives:_**
 
+Create a Ping-pong game using Windows Forms and C#.
+
 **_Traducido del español:_**
 
 ### Cómo crear un juego de Ping-Pong sencillo en Windows Forms y Visual Studio:
