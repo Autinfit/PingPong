@@ -11,6 +11,8 @@
 
 ![image](https://github.com/Autinfit/PingPong/assets/155406623/e011c1eb-b3e5-4a44-8a40-e7e57266fb62)
 
+Lesson objectives:
+
 **_Traducido del español:_**
 
 ### Cómo crear un juego de Ping-Pong sencillo en Windows Forms y Visual Studio:
