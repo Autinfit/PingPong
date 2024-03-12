@@ -14,6 +14,7 @@
 **_Lesson objectives:_**
 
 - **_Create a Ping-pong game using Windows Forms and C#._**
+- EN INSTANTES...
 
 **_Traducido del español:_**
 
