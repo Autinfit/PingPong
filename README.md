@@ -17,7 +17,7 @@
 - **_Assign up and down moves to the player by pressing these keys._**
 - **_Assign random movements to the "x" and "y" positions of the ball._**
 - **_Assign random movements and speed for computer movement._**
-- EN INSTANTES...
+- Keep track of the score and update the score in some way for the player and the computer.
 - EN INSTANTES...
 
 **_Traducido del español:_**
