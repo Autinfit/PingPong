@@ -19,6 +19,7 @@
 - **_Assign random movements and speed for computer movement._**
 - **_Keep track of the score and update the score in some way for the player and the computer._**
 - **_Import those images and assign them to the ball, the player and the computer image box._**
+- Display a custom ending message when the player or computer wins the game.
 
 **_Traducido del español:_**
 
