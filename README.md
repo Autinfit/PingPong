@@ -18,7 +18,7 @@
 - **_Assign random movements to the "x" and "y" positions of the ball._**
 - **_Assign random movements and speed for computer movement._**
 - **_Keep track of the score and update the score in some way for the player and the computer._**
-- EN INSTANTES...
+- Import those images and assign them to the ball, the player and the computer image box.
 
 **_Traducido del español:_**
 
