@@ -13,7 +13,7 @@
 
 **_Lesson objectives:_**
 
-- **_Create a Ping-pong game using Windows Forms and C#._**
+- **_Create a Ping-Pong game using Windows Forms and C#._**
 - **_Assign up and down moves to the player by pressing these keys._**
 - **_Assign random movements to the "x" and "y" positions of the ball._**
 - **_Assign random movements and speed for computer movement._**
