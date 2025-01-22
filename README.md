@@ -36,7 +36,7 @@
 
 **_Objetivos de esta lección:_**
 
-- **_Crear un juego de Ping-pong usando Windows Forms y C#._**
+- **_Crear un juego de Ping-Pong usando Windows Forms y C#._**
 - **_Asignar movimientos de mover hacia arriba y hacia abajo al jugador al presionar estas teclas._**
 - **_Asignar movimientos aleatorios a las posiciones "x" e "y" de la pelota._**
 - **_Asignar movimientos y velocidad aleatoria para el movimiento de la computadora._**
