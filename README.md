@@ -34,7 +34,7 @@
 
 ![image](https://github.com/Autinfit/PingPong/assets/155406623/91726ca5-ae26-42b6-925a-93729e24399f)
 
-**_Objetivos de esta lección:_**
+### **_Objetivos de esta lección:_**
 
 - **_Crear un juego de Ping-Pong usando Windows Forms y C#._**
 - **_Asignar movimientos de mover hacia arriba y hacia abajo al jugador al presionar estas teclas._**
